@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+ position: fixed;
+ bottom: 0;
+ background-color: black;
+ text-align: center;
+ color: white;
+ width: 100%;
+}
+
+.homeContainer{
+  display: flex;
+  background: linear-gradient(to right, #000cff, #c300ff);
+    width: 100%;    
+    height: 493px;
+}
+
+.homeRightContainer{
+  width:50%;
+  height: 493px;
+  padding: 24px 12px 12px 64px;
+}
+.homeLeftContainer{
+  width:50%;
+  height: 493px;
+}
+.SignUpContainer{
+  width:75%;
+  height:75%;
+  margin: auto;
+}
+.HomePara{
+  color: white;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 122px;
+}
+.HomePara2{
+  color: white;
+  position: absolute;
+  margin-top: 289px;
+  margin-left: 198px;
+}
+.HomePara3{
+  position: absolute;
+  color: white;
+  margin-top: 354px;
+  margin-left: 60px;
+}
+.HomePara4{
+  position: absolute;
+  color: white;
+  margin-top: 375px;
+  margin-left: 188px;
+}
+
+.ContactContainer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: auto;
+ max-width: 75%;
+ margin-top: 34px;
+}
+.ProfileCoinBox{
+  border: 1.4px solid rgb(178, 159, 159);
+  border-radius: 7px;
+  width: 20rem;
+  padding: 8px;
+  color: rgb(64, 171, 142);
+  font-weight: 500;
+}
+.ProfileStockBox{
+  border: 1.4px solid rgb(178, 159, 159);
+  border-radius: 7px;
+  width: 20rem;
+  padding: 8px;
+  color: rgb(64, 171, 142);
+  font-weight: 500;
+  margin-top: 23px;
+}
+.profileContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 23px;
+}
+
+a {
+  text-decoration: none;
+}
+.verticleLine{
+  border-left: 1.4px solid rgb(178, 159, 159);
+  height: 75%;
+  position: absolute;
+  margin-left: 745px;
+}
+.totalInvestment{
+  border: 1.4px solid rgb(178, 159, 159);
+  position: absolute;
+  margin-left: 812px;
+  border-radius: 7px;
+  width:330px;
+  height: 220px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+
+
+
+

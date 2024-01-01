@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hover {
+  position: relative;
+  top: -5px; /* this will raise the element */
+}
+
+.CardImage {
+  transition: transform .2s; /* Animation */
+  width: 16rem;
+  height: 16rem;
+  margin: 0 auto;
+  margin-left: 33px;
+  margin-top: 12px;
+}
+
+.CardImage:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#homeImage1:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+
+}
+#homeImage2:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+#homeImage3:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}
+#homeImage4:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}
