@@ -12,7 +12,7 @@ app.use(cors())
 app.use(express.json());
 // availabel routes
 app.use('/api/auth',require('./routes/auth'));
-app.use('/api/stocks',require('./routes/stocks'));
+app.use('/api/record',require('./routes/addRecord'));
 app.use('/api/getname',require('./middleware/getname'));
 
 

@@ -2,150 +2,165 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .wrapper {
- position: fixed;
- bottom: 0;
- background-color: black;
- text-align: center;
- color: white;
- width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color:#009879;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.headerTextContainer {
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.headerText {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+.headerText:hover{
+  color: rgb(214, 205, 205);
+
 }
 
 .homeContainer{
+  height: 83vh;
+  width: 100%;
   display: flex;
-  background: linear-gradient(to right, #000cff, #c300ff);
-    width: 100%;    
-    height: 493px;
-}
-
-.homeRightContainer{
-  width:50%;
-  height: 493px;
-  padding: 24px 12px 12px 64px;
 }
 .homeLeftContainer{
-  width:50%;
-  height: 493px;
-}
-.SignUpContainer{
-  width:75%;
-  height:75%;
-  margin: auto;
-}
-.HomePara{
-  color: white;
-  position: absolute;
-  margin-top: 250px;
-  margin-left: 122px;
-}
-.HomePara2{
-  color: white;
-  position: absolute;
-  margin-top: 289px;
-  margin-left: 198px;
-}
-.HomePara3{
-  position: absolute;
-  color: white;
-  margin-top: 354px;
-  margin-left: 60px;
-}
-.HomePara4{
-  position: absolute;
-  color: white;
-  margin-top: 375px;
-  margin-left: 188px;
-}
-
-.ContactContainer{
- display: flex;
- flex-direction: column;
- justify-content: center;
- margin: auto;
- max-width: 75%;
- margin-top: 34px;
-}
-.ProfileCoinBox{
-  border: 1.4px solid rgb(178, 159, 159);
-  border-radius: 7px;
-  width: 20rem;
-  padding: 8px;
-  color: rgb(64, 171, 142);
-  font-weight: 500;
-}
-.ProfileStockBox{
-  border: 1.4px solid rgb(178, 159, 159);
-  border-radius: 7px;
-  width: 20rem;
-  padding: 8px;
-  color: rgb(64, 171, 142);
-  font-weight: 500;
-  margin-top: 23px;
-}
-.profileContainer{
-  position: absolute;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-left: 23px;
+  justify-content: center;
+  align-items: center;
+  color: #009879;
+  padding: 12px;
+  text-align: center;
+  /* object-fit: cover;
+  background-size: cover; */
+}
+.rightHomeContainer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #009879;
+
+}
+.rightHomeContainer img{
+ height: 60vh;
+ width: 35vw;
+}
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.SignUpContainer {
+  width: 75%;
+  height: 75%;
+  margin: auto;
 }
 
 a {
   text-decoration: none;
 }
-.verticleLine{
-  border-left: 1.4px solid rgb(178, 159, 159);
-  height: 75%;
-  position: absolute;
-  margin-left: 745px;
-}
-.totalInvestment{
-  border: 1.4px solid rgb(178, 159, 159);
-  position: absolute;
-  margin-left: 812px;
-  border-radius: 7px;
-  width:330px;
-  height: 220px;
-  padding: 15px;
-  font-weight: 500;
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
 }
 
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
 
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
 
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
 
+.styled-table th,
+.styled-table td {
+  padding: 8px 8px;
+}
 
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 70%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.rightHomeContainerText{
+  color: #009879;
+}
+.rightHomeContainerText:hover{
+  color: #066755;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topHeader{
+  display: flex;
+  width: 70%;
+  margin-top: 4vh;
+  /* background-color: black; */
+}
+.menu{
+  display: flex;
+  gap: 3vw;
+  width: 100%;
+  
+}
+.addRecord{
+  width: 70%;
+  /* background-color: black; */
+}
+#filter{
+  height: 33px;
+}
+#filterBtn{
+  height: 33px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#AddNewRecord{
+  height: 33px;
+}
+.filterBox{
+  display: flex;
+  gap: 4px;
+}
+.searchRecords{
+  display: flex;
+  gap: 4px;
+}
+.addRecordContainer1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+}

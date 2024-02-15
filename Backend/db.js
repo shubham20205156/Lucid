@@ -1,11 +1,23 @@
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/FreeStock";
+// const mongoURI = "mongodb://localhost:27017/LucidGrowth";
+const mongoURI = "mongodb+srv://shubham:tPJKRoBbV1GRkNyC@cluster0.i1bb4nb.mongodb.net/?retryWrites=true&w=majority";
 
-const connectToMongo = ()=>{
+// const connectToMongo = ()=>{
 
-    mongoose.connect(mongoURI,()=>{
-        console.log("connected to database successfully");
-    })
+//     mongoose.connect(mongoURI,()=>{
+//         console.log("connected to database successfully");
+//     })
+// }
+const connectToMongo = () => {
+
+    mongoose.connect(mongoURI)
+        .then(() => {
+            console.log("db connected");
+
+        })
+        .catch((error) => {
+            console.log("error occurred :", error.message);
+        })
 }
 
 module.exports = connectToMongo;
